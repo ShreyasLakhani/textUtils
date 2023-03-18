@@ -18,11 +18,11 @@ export default function Textarea(props) {
         setText("")
     }
 
-    // const copyText = () =>{
-    //     let text = document.getElementById("mybox");
-    //     text.select();
-    //     navigator.clipborad.writeText(text.value);
-    // }
+     const copyText = () =>{
+         let text = document.getElementById("mybox");
+         text.select.value();
+         navigator.clipborad.writeText(text.value);
+     }
 
     const handleOnChange=(event)=>{
         setText(event.target.value);
@@ -40,7 +40,7 @@ export default function Textarea(props) {
         <button className="btn btn-primary mx-5 my-3" type="submit" onClick={upCase}>upperCase</button>
         <button className="btn btn-primary mx-5" type="submit" onClick={lowCase}>lowerCase</button>
         <button className="btn btn-primary mx-5" type="submit" onClick={clearText}>Clear</button>
-        {/* <button className="btn btn-primary mx-5" type="submit" onClick={copyText}>Copy Text</button> */}
+        <button className="btn btn-primary mx-5" type="submit" onClick={copyText}>Copy Text</button> */}
         </div>
 
         <div className="summery"></div>
